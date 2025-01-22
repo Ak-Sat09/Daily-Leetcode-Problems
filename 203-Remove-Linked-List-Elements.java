@@ -1,9 +1,9 @@
 class Solution {
     public ListNode removeElements(ListNode head, int val) {
-        // Create a dummy node to handle the case where the head itself needs to be removed
+        
         ListNode dummy = new ListNode(0);
         dummy.next = head;
-        ListNode curr = dummy; // Start from the dummy node
+        ListNode curr = dummy; 
         
         while (curr.next != null) {
             if (curr.next.val == val) {
