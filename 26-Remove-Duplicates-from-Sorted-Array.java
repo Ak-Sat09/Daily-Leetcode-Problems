@@ -1,13 +1,7 @@
 class Solution {
     public int removeDuplicates(int[] arr) {
-
-        int i = 0;
-        for(int j=1; j<arr.length; j++){
-            if(arr[j] != arr[i]){
-                i++;
-                arr[i] = arr[j];
-            }
-        }
-        return i+1;
+        int unique[] = Arrays.stream(arr).distinct().toArray(); 
+         System.arraycopy(unique, 0, arr, 0, unique.length);
+        return unique.length;
     }
 }
