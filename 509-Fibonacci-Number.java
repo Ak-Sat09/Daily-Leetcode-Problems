@@ -1,10 +1,6 @@
- class Solution 
-{
-    public int fib(int N)
-    {
-        if(N <= 1)
-            return N;
-        else
-            return fib(N - 1) + fib(N - 2);
+ class Solution {
+    public int fib(int n){ 
+        if(n<=1)return n;
+        return fib(n-1)+fib(n-2);
     }
 }
